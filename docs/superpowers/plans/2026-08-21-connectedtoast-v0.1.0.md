@@ -395,7 +395,7 @@ Automated evidence must cover pure-plugin install shape, tab hook, seven native 
 
 Do not claim endpoint delivery, Windows/macOS/Linux appearance, restart persistence in the deployed cluster, or coexistence in production unless those live tests were actually run. Report them as remaining deployment acceptance checks while distinguishing them from locally verified implementation.
 
-- [ ] **Step 4: Review the complete diff and finish the branch workflow**
+- [x] **Step 4: Review the complete diff and finish the branch workflow**
 
 Run: `git status --short`, `git diff --stat`, and `git diff -- . ':(exclude)*Design & Implementation Specification.md'`.
 
