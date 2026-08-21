@@ -1,7 +1,7 @@
 {
   "name": "Connected Toast",
   "shortName": "connectedtoast",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Onix Informatika",
   "description": "Per-device MeshCentral remote-session visibility and custom endpoint connection notifications.",
   "hasAdminPanel": false,

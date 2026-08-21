@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.2, 2026-08-21
+
+- Added a viewport-bounded vertical scroll region inside the device settings panel so every ConnectedToast field remains reachable in MeshCentral's clipped Plugins view.
+- Kept the sticky action bar visible while scrolling the settings.
+- Added a browser regression test for the scroll container.
+
 ## 0.1.1, 2026-08-21
 
 - Moved Save settings, Send test toast, Reset Connected Toast, and status feedback to a sticky action bar at the top of the device tab.

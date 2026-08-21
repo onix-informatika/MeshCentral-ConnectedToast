@@ -142,6 +142,15 @@ test("primary save action is rendered before the long settings sections", () => 
     assert.equal(savePosition < nativeSettingsPosition, true);
 });
 
+test("device settings panel provides its own vertical scroll region", () => {
+    const f = fixture();
+    f.api.onDeviceRefreshEnd("node//pc1");
+    const page = f.document.getElementById("ct-page");
+    assert.notEqual(page, null);
+    assert.equal(page.style.overflowY, "auto");
+    assert.equal(page.style.maxHeight, "calc(100vh - 150px)");
+});
+
 test("operator options use textContent for hostile display names", () => {
     const f = fixture();
     f.api.onDeviceRefreshEnd("node//pc1");

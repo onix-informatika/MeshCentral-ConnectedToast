@@ -2,7 +2,7 @@
 
 ConnectedToast is a pure MeshCentral plugin for per-device remote-session transparency. It adds a **Connected Toast** tab to each device page, exposes the seven native MeshCentral consent bits, and can send a custom plain-text MeshAgent toast when an operator starts or ends a supported relay session.
 
-Version 0.1.1 requires MeshCentral 1.1.53 or newer and does not patch MeshCentral core or MeshAgent.
+Version 0.1.2 requires MeshCentral 1.1.53 or newer and does not patch MeshCentral core or MeshAgent.
 
 ## What the device tab configures
 
