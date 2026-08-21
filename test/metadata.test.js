@@ -7,11 +7,11 @@ const path = require("node:path");
 
 const repositoryRoot = path.join(__dirname, "..");
 
-test("plugin catalog metadata identifies ConnectedToast v0.1.0", () => {
+test("plugin catalog metadata identifies ConnectedToast v0.1.1", () => {
     const metadata = JSON.parse(fs.readFileSync(path.join(repositoryRoot, "config.json"), "utf8"));
     assert.equal(metadata.name, "Connected Toast");
     assert.equal(metadata.shortName, "connectedtoast");
-    assert.equal(metadata.version, "0.1.0");
+    assert.equal(metadata.version, "0.1.1");
     assert.equal(metadata.hasAdminPanel, false);
     assert.equal(metadata.meshCentralCompat, ">=1.1.53");
     for (const field of ["homepage", "changelogUrl", "configUrl", "downloadUrl", "versionHistoryUrl"]) {

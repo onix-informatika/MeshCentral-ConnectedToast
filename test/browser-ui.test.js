@@ -131,6 +131,17 @@ test("device refresh registers one normal plugin tab and requests authoritative 
     assert.equal(f.document.getElementById("connectedtoast-panel").innerHTML.includes("Native MeshCentral visibility &amp; consent"), true);
 });
 
+test("primary save action is rendered before the long settings sections", () => {
+    const f = fixture();
+    f.api.onDeviceRefreshEnd("node//pc1");
+    const markup = f.document.getElementById("connectedtoast-panel").innerHTML;
+    const savePosition = markup.indexOf('id="ct-save"');
+    const nativeSettingsPosition = markup.indexOf('id="ct-native-rows"');
+    assert.notEqual(savePosition, -1);
+    assert.notEqual(nativeSettingsPosition, -1);
+    assert.equal(savePosition < nativeSettingsPosition, true);
+});
+
 test("operator options use textContent for hostile display names", () => {
     const f = fixture();
     f.api.onDeviceRefreshEnd("node//pc1");

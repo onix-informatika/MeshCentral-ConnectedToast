@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1, 2026-08-21
+
+- Moved Save settings, Send test toast, Reset Connected Toast, and status feedback to a sticky action bar at the top of the device tab.
+- Added an explicit reminder that edits remain local until Save settings is pressed.
+- Added a browser regression test that keeps the primary save action ahead of the long settings sections.
+
 ## 0.1.0, 2026-08-21
 
 - Added the per-device Connected Toast plugin tab.

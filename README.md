@@ -2,7 +2,7 @@
 
 ConnectedToast is a pure MeshCentral plugin for per-device remote-session transparency. It adds a **Connected Toast** tab to each device page, exposes the seven native MeshCentral consent bits, and can send a custom plain-text MeshAgent toast when an operator starts or ends a supported relay session.
 
-Version 0.1.0 requires MeshCentral 1.1.53 or newer and does not patch MeshCentral core or MeshAgent.
+Version 0.1.1 requires MeshCentral 1.1.53 or newer and does not patch MeshCentral core or MeshAgent.
 
 ## What the device tab configures
 
@@ -21,6 +21,8 @@ The first section edits the selected device's native `node.consent` bitmask thro
 Native consent is additive. MeshCentral calculates the effective value from domain, device group, device, and connecting-user consent. Clearing a device checkbox cannot clear an inherited requirement. The tab therefore shows device, inherited, and effective state for every bit, and recalculates the display for the selected operator.
 
 The inherited domain message, consent, timeout, auto-accept, notification, and privacy-bar fields are displayed read-only. They are not per-device values.
+
+Use the sticky **Save settings** action at the top of the tab to persist both ConnectedToast rules and the selected device's native consent bits. Until that action reports success, edits exist only in the current browser tab.
 
 The second section stores ConnectedToast rules independently from native consent. Defaults are:
 
