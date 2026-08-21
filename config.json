@@ -1,0 +1,18 @@
+{
+  "name": "Connected Toast",
+  "shortName": "connectedtoast",
+  "version": "0.1.0",
+  "author": "Onix Informatika",
+  "description": "Per-device MeshCentral remote-session visibility and custom endpoint connection notifications.",
+  "hasAdminPanel": false,
+  "homepage": "https://github.com/onix-informatika/MeshCentral-ConnectedToast",
+  "changelogUrl": "https://raw.githubusercontent.com/onix-informatika/MeshCentral-ConnectedToast/master/changelog.md",
+  "configUrl": "https://raw.githubusercontent.com/onix-informatika/MeshCentral-ConnectedToast/master/config.json",
+  "downloadUrl": "https://github.com/onix-informatika/MeshCentral-ConnectedToast/archive/master.zip",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onix-informatika/MeshCentral-ConnectedToast.git"
+  },
+  "versionHistoryUrl": "https://api.github.com/repos/onix-informatika/MeshCentral-ConnectedToast/tags",
+  "meshCentralCompat": ">=1.1.53"
+}
